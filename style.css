@@ -1,0 +1,25 @@
+body {
+  background-image: url(onett_map.png);
+}
+
+form {
+  background-color: LightGreen;
+}
+
+table {
+  border:1px solid Black;
+}
+
+th {
+  border:1px solid Black;
+  background-color: LightPink;
+}
+
+td {
+  border:1px solid Black;
+  background-color: LightYellow;
+}
+
+#receipt {
+  background-color: LightGreen;
+}

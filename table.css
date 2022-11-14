@@ -1,0 +1,7 @@
+table, td {
+  border: 1px Solid Black;
+}
+
+th {
+  background-color: LightBlue;
+}

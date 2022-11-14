@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>EECS 448: Lab 6 Storefront</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Onett General Store</h1>
+  <form id="store_form" action="customerBackend.php" method="POST">
+    <div id="login">
+      <label for="usrname">Username:</label>
+      <input id="usrname" type="text" name="usrname"><br>
+      <label for="pssword">Password:</label>
+      <input id="pssword" type="password" name="pssword">
+    </div>
+
+    <br><br>
+
+    <div id="store">
+      <h2>Storefront</h2>
+      <p>Select Items to purchase</p>
+      <table>
+        <tr>
+          <th>Big League Bat(s) </th>
+          <td><img src="blb.jpg" height="200" width="200"></td>
+          <td><input id="blb" type="text" name="blb"> at $3080 a bat.</td>
+        </tr>
+        <tr>
+          <th>PSI Caramel(s)</th>
+          <td><img src="psi.jpg" height="200" width="200"></td>
+          <td><input id="psi" type="text" name="psi_caramel"> at $40 a caramel.</td>
+        </tr>
+        <tr>
+          <th>Jar(s) of Fly Honey</th>
+          <td><img src="honey.jpeg" height="200" width="200"></td>
+          <td><input id="jar" type="text" name="honey"> at $2 a jar.</td>
+        </tr>
+      </table>
+    </div>
+
+    <br><br>
+
+    <div id="shipping_form">
+      <h2>Shipping Options</h2>
+      <label for ="shipping">Select a shipping method:</label><br>
+      <input type="radio" name="shipping" value="Free">Free 7 Day<br>
+      <input type="radio" name="shipping" value="Overnight">$50.00 Over Night<br>
+      <input type="radio" name="shipping" value="Three Day">$5.00 Three Day<br>
+    </div>
+    <br>
+
+    <input type="reset" value="Reset"><br>
+    <input type="button" value="Submit" onclick="validateForm()">
+  </form>
+  <script src="formChecker.js"></script>
+</body>
